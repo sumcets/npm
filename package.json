@@ -1,6 +1,6 @@
 {
   "name": "cbc-ui",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "",
   "main": "lib/cbc-ui.js",
   "module": "es/index.js",
@@ -9,6 +9,9 @@
     "lib",
     "es"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "dev": "vant-cli dev",
     "test": "vant-cli test",
@@ -20,12 +23,6 @@
   },
   "author": "",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "vant-cli commit-lint"
-    }
-  },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,vue}": "eslint --fix",
     "*.{vue,css,less,scss}": "stylelint --fix"
