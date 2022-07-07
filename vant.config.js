@@ -5,7 +5,7 @@ module.exports = {
       preprocessor: 'sass',
     },
     site: {
-      publicPath: '/cbc-ui/',
+      publicPath: '/',
     },
   },
   site: {
@@ -32,6 +32,14 @@ module.exports = {
             path: 'demo-button',
             title: 'DemoButton 按钮',
           },
+          {
+            path: 'cby-profile',
+            title: 'CbyProfile 个人中心'
+          },
+          {
+            path: 'cby-workbench',
+            title: 'CbyWorkbench 工作台'
+          }
         ],
       },
     ],

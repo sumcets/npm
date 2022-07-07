@@ -1,6 +1,6 @@
 {
   "name": "cbc-ui",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "",
   "main": "lib/cbc-ui.js",
   "module": "es/index.js",
@@ -17,9 +17,15 @@
     "test": "vant-cli test",
     "lint": "vant-cli lint",
     "build": "vant-cli build",
+    "prepare": "husky install",
     "release": "vant-cli release",
-    "test:coverage": "open test/coverage/index.html",
-    "build-site": "vant-cli build-site && gh-pages -d site-dist"
+    "build-site": "vant-cli build-site"
+  },
+  "nano-staged": {
+    "*.md": "prettier --write",
+    "*.{ts,tsx,js,vue,less,scss}": "prettier --write",
+    "*.{ts,tsx,js,vue}": "eslint --fix",
+    "*.{vue,css,less,scss}": "stylelint --fix"
   },
   "author": "",
   "license": "MIT",
@@ -56,6 +62,7 @@
     "iOS >= 8"
   ],
   "dependencies": {
+    "@bundled-es-modules/axios": "^0.27.2",
     "vant": "^2.12.48"
   }
 }

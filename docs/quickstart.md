@@ -8,7 +8,3 @@ npm i cbc-ui
 
 # 通过 yarn
 yarn add cbc-ui
-
-# 通过 pnpm
-pnpm add cbc-ui
-```

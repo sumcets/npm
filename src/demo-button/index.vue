@@ -1,7 +1,6 @@
 <template>
 <div>
-  <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
-<button class="demo-button">
+  <button class="demo-button">
     <slot />
   </button>
 </div>
@@ -9,12 +8,8 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import { Icon } from 'vant';
-Vue.use(Icon);
 export default {
   name: 'demo-button',
-
   props: {
     color: String,
     type: {
