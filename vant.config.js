@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         title: 'UI组件',
-        item: [
+        items: [
           {
             path: 'demo-button',
             title: 'DemoButton 按钮'
