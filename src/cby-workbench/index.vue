@@ -165,6 +165,7 @@ export default {
 <style scoped lang="scss">
 .cby-workbench-main{
   height: 100%;
+  overflow-y: auto;
   .cby-menu{
     margin-bottom: 10px;
     .item{
