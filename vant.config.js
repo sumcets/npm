@@ -26,12 +26,8 @@ module.exports = {
         ],
       },
       {
-        title: '基础组件',
+        title: '业务组件',
         items: [
-          {
-            path: 'demo-button',
-            title: 'DemoButton 按钮',
-          },
           {
             path: 'cby-profile',
             title: 'CbyProfile 个人中心'
@@ -42,6 +38,15 @@ module.exports = {
           }
         ],
       },
+      {
+        title: 'UI组件',
+        item: [
+          {
+            path: 'demo-button',
+            title: 'DemoButton 按钮'
+          }
+        ]
+      }
     ],
   },
 };
