@@ -10,7 +10,7 @@
     "es"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "http://npm.sumcet.com"
   },
   "scripts": {
     "dev": "vant-cli dev",
