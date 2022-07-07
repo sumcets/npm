@@ -29,12 +29,20 @@ module.exports = {
         title: '业务组件',
         items: [
           {
-            path: 'cby-profile',
-            title: 'CbyProfile 个人中心'
+            path: 'cby-workbench',
+            title: '工作台'
           },
           {
-            path: 'cby-workbench',
-            title: 'CbyWorkbench 工作台'
+            path: 'cby-function-center',
+            title: '功能中心'
+          },
+          {
+            path: 'cby-profile',
+            title: '个人中心'
+          },
+          {
+            path: 'cby-change-mobile',
+            title: '更改手机号'
           }
         ],
       },
