@@ -2,8 +2,8 @@
 
 
 ### 介绍
-
 cbc-ui业务组件库
+[文档](http://cbc.sumcet.com/)
 
 ### 引入
 
