@@ -1,6 +1,6 @@
 {
   "name": "cbc-ui",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "",
   "main": "lib/cbc-ui.js",
   "module": "es/index.js",
