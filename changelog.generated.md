@@ -1,6 +1,5 @@
-### [v2.0.20](https://github.com/compare/v2.0.19...v2.0.20)
+### [v2.0.21](https://github.com/compare/v2.0.20...v2.0.21)
 
-`2022-07-07`
+`2022-07-08`
 
-- feat:添加iconfont [861547](https://github.com/commit/861547cacc1ff897944bda1d1f2a300960e361d4)
-- feat:添加iconfont [c0575f](https://github.com/commit/c0575fb6412bba7ddb83bd2d04a98d9a4adfb3c2)
+- feat:添加iconfont [4add29](https://github.com/commit/4add298b777a88b7456540f5712bf1644882e731)
