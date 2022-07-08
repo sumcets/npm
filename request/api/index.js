@@ -134,7 +134,13 @@ const api = {
   goodsDistribution: '/warehouse/v1/intelligence/kpi/distribution',
   personalKpi: '/warehouse/v1/intelligence/kpi/personal',
   inOutTypeAny: '/warehouse/v1/intelligence/delivery/type',
-  deliverAlarm: '/warehouse/v1/intelligence/delivery/alarm'
+  deliverAlarm: '/warehouse/v1/intelligence/delivery/alarm',
+  fixtureList: '/v1/worktool/list',
+  fixtureDetail: '/v1/worktool/details',
+  getFixtureDetail: '/v1/worktool/details/byId',
+  mouldList: '/v1/mould/list',
+  mouldDetail: '/v1/mould/details',
+  getMouldDetail: '/v1/mould/details/byId'
 }
 
 export default api

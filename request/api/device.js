@@ -7,6 +7,7 @@ export function deviceList(params) {
     method: 'get',
     params,
     needToken: true,
+    hideloading: true,
     loadingMsg: '获取设备列表'
   })
 }

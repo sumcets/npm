@@ -43,6 +43,10 @@ module.exports = {
           {
             path: 'cby-change-mobile',
             title: '更改手机号'
+          },
+          {
+            path: 'cby-dwmlist-select',
+            title: '设备模具工装选择'
           }
         ],
       },
