@@ -1,5 +1,5 @@
-### [v2.0.21](https://github.com/compare/v2.0.20...v2.0.21)
+### [v2.0.22](https://github.com/compare/v2.0.21...v2.0.22)
 
 `2022-07-08`
 
-- feat:添加iconfont [4add29](https://github.com/commit/4add298b777a88b7456540f5712bf1644882e731)
+- fix:修改md [5e365c](https://github.com/commit/5e365cb0d33b9c9556f77de1d0f80974bf1bbdd8)
