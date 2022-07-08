@@ -1,6 +1,6 @@
 <template>
   <div class="index-main">
-    <cby-function-center />
+    <cby-function-center applicationName="APP_WAREHOUSE"/>
   </div>
 </template>
 

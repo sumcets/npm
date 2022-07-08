@@ -2,12 +2,11 @@
 
 ### 介绍
 
-CbyFunctionCenter 是功能中心通用业务模块
+CbyFunctionCenter 是功能中心通用业务模块,适用于`设备维保`、`监控安灯`、`资产效能`和`仓储管理`应用
 
 ### 引入
 
 ```js
-import Vue from 'vue';
 import { CbyFunctionCenter } from 'cbc-ui';
 
 components: { CbyFunctionCenter }
@@ -18,14 +17,13 @@ components: { CbyFunctionCenter }
 ### 基础用法
 
 ```html
-<cby-function-center running-env="dd" application-name="设备维保"/>
+<cby-function-center application-name="设备维保"/>
 ```
 
 ## API
 
 ### Props
 
-| 参数          | 说明     | 类型     | 默认值    |
-| ------------- | -------- | -------- | --------- |
-| runningEnv          | 运行环境 | _string_ | `h5`（可取值dd、wx、h5） |
-| applicationName | app的name | _string_ | -         |
+| 参数          | 说明     | 类型     | 默认值    | 可取值|
+| ------------- | -------- | -------- | --------- |---------|
+|applicationName|应用的name|_string_|`-`  |`APP_DEVICE` `APP_ANDON` `APP_EFFICIENCY` `APP_WAREHOUSE` `APP_KNOWLEDGE`|

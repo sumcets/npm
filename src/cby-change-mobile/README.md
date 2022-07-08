@@ -1,16 +1,15 @@
-# CbyFunctionCenter 功能中心
+# CbyChangeMobile 更改手机号
 
 ### 介绍
 
-CbyFunctionCenter 是功能中心通用业务模块
+CbyChangeMobile 是更改手机号通用业务模块，适用于全部应用
 
 ### 引入
 
 ```js
-import Vue from 'vue';
-import { CbyFunctionCenter } from 'cbc-ui';
+import { CbyChangeMobile } from 'cbc-ui';
 
-components: { CbyFunctionCenter }
+components: { CbyChangeMobile }
 ```
 
 ## 代码演示
@@ -18,14 +17,5 @@ components: { CbyFunctionCenter }
 ### 基础用法
 
 ```html
-<cby-function-center running-env="dd" application-name="设备维保"/>
+<cby-change-mobile />
 ```
-
-## API
-
-### Props
-
-| 参数          | 说明     | 类型     | 默认值    |
-| ------------- | -------- | -------- | --------- |
-| runningEnv          | 运行环境 | _string_ | `h5`（可取值dd、wx、h5） |
-| applicationName | app的name | _string_ | -         |

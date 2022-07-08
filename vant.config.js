@@ -50,8 +50,8 @@ module.exports = {
         title: 'UI组件',
         items: [
           {
-            path: 'demo-button',
-            title: 'DemoButton 按钮'
+            path: 'cby-ui-icon',
+            title: 'Icon'
           }
         ]
       }

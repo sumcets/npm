@@ -47,14 +47,16 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import { Button, Cell, CellGroup, Icon, Image } from 'vant'
-Vue.use(Button).use(Cell).use(CellGroup).use(Image).use(Icon)
+import { Button, Cell, Icon, Image } from 'vant'
 
-import { userInfo, getUserPhoto } from '../util/api/user'
+import { userInfo, getUserPhoto } from '../../request/api/user'
 export default {
   name: 'cby-profile',
   components: {
+    'van-button': Button,
+    'van-cell': Cell,
+    'van-icon': Icon,
+    'van-image': Image
   },
   data() {
     return {
@@ -66,14 +68,6 @@ export default {
     runningEnv: {
       type: String,
       default: 'h5'
-    },
-    applicationName: {
-      type: String,
-      default: ''
-    },
-    appModuleType: {
-      type: String,
-      default: ''
     },
     version: {
       type: String,

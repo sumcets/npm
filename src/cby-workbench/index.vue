@@ -10,7 +10,7 @@
       <Grid :border="false">
         <GridItem :text="menu.name" v-for="menu in menuList" :key="menu.name">
           <div class="item" slot="icon" :style="{ backgroundColor: menu.iconBgColor }">
-            <van-icon :name="menu.icon" size="25" color="#fff"/>
+            <cby-ui-icon :name="menu.icon" :size=" menu.iconSize || 25" :color="menu.iconColor"></cby-ui-icon>
           </div>
           <div slot="text" class="menu-name">
             {{ menu.name }}
@@ -63,7 +63,7 @@
           </Swipe>
         </NoticeBar>
       </div>
-      <div class="cby-agency-list">
+      <div class="cby-agency-list" v-if="agencyList.length">
         <Empty v-if="!agencyList.length" description="暂无数据"/>
         <div class="item" v-for="agency in agencyList">
           <div>
@@ -87,8 +87,9 @@
 </template>
 
 <script>
-import { Search } from 'vant'
-import { Grid, GridItem, Icon, Progress,NoticeBar,Swipe, SwipeItem, Empty, Tag } from 'vant'
+import { Grid, GridItem, Icon, Progress,NoticeBar,Swipe, SwipeItem, Empty, Tag, Search } from 'vant'
+import CbyUiIcon from '../cby-ui-icon'
+import { getDict } from '../../utils/ddic'
 export default {
   name: "cby-workbench",
   components: {
@@ -101,11 +102,15 @@ export default {
     Empty,
     Swipe,
     SwipeItem,
-    Tag
+    Tag,
+    CbyUiIcon
   },
   data() {
     return {
-      search: ''
+      search: '',
+      agencyData: {},
+      agencyList: [],
+      noticeList: []
     }
   },
   props: {
@@ -113,23 +118,13 @@ export default {
       type: String,
       default: '请输入搜索关键词'
     },
-    menuList: {
-      type:Array,
-      default: () => []
+    applicationName: {
+      type: String,
+      default: ''
     },
-    agencyData: {
-      type:Object,
-      default: () => {
-        return {}
-      }
-    },
-    agencyList: {
-      type: Array,
-      default: () => []
-    },
-    noticeList: {
-      type: Array,
-      default: () => []
+    runningEnv: {
+      type: String,
+      default: 'h5'
     }
   },
   mounted() {
@@ -143,6 +138,9 @@ export default {
     },
     percentRunning() {
       return this.countPercent('running')
+    },
+    menuList() {
+      return getDict('WORKBENCH_MENU', this.applicationName)
     }
   },
   methods: {
@@ -150,7 +148,10 @@ export default {
       if (val) this.$emit('onSearch', val)
     },
     countPercent(attr) {
-      const hasData = this.agencyData?.[attr] && this.agencyData?.total && this.agencyData[attr] < this.agencyData.total
+      const hasData =
+          this.agencyData?.[attr]
+          && this.agencyData?.total
+          && this.agencyData[attr] < this.agencyData.total
       return hasData ? 100 * (this.agencyData[attr] / this.agencyData.total) : 0
     },
     agencyJump(agency) {
@@ -168,6 +169,7 @@ export default {
   overflow-y: auto;
   .cby-menu{
     margin-bottom: 10px;
+    background-color: #fff;
     .item{
       height: 45px;
       width: 45px;

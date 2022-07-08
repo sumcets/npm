@@ -1,13 +1,6 @@
 <template>
   <div class="index-main">
-    <cby-workbench
-        :menu-list="menuList"
-        :agencyData="agencyData"
-        :agencyList="agencyList"
-        :noticeList="noticeList"
-        @onSearch="onSearch"
-        @onAgencyJump="onAgencyJump"
-        />
+    <cby-workbench applicationName="APP_WAREHOUSE" />
   </div>
 </template>
 

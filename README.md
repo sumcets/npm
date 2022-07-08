@@ -13,3 +13,8 @@ import { CbyProfile } from 'cbc-ui';
 
 components: { CbyProfile }
 ```
+### Props
+
+| 参数          | 说明     | 类型     | 默认值    |
+| ------------- | -------- | -------- | --------- |
+| applicationName | app的name | _string_ | `-` (设备维保、监控安灯、资产效能、仓储管理、知识库)         |
