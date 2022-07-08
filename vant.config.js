@@ -9,7 +9,7 @@ module.exports = {
     },
   },
   site: {
-    title: 'cbc-ui',
+    title: '彩贝云前端组件库',
     logo: 'https://img.yzcdn.cn/vant/logo.png',
     nav: [
       {

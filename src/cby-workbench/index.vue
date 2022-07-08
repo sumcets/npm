@@ -55,7 +55,7 @@
               class="notice-swipe"
               :autoplay="3000"
               :show-indicators="false">
-            <SwipeItem v-for="notice in noticeList">
+            <SwipeItem v-for="(notice, index) in noticeList" :key="index">
               <div class="notice-item">
                 <span>{{ notice.desc }}</span><span>{{ notice.time }}</span>
               </div>

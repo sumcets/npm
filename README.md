@@ -15,6 +15,7 @@ components: { CbyProfile }
 ```
 ### Props
 
-| 参数          | 说明     | 类型     | 默认值    |
-| ------------- | -------- | -------- | --------- |
-| applicationName | app的name | _string_ | `-` (设备维保、监控安灯、资产效能、仓储管理、知识库)         |
+| 参数          | 说明     | 类型     | 默认值    | 可选值|
+| ------------- | -------- | -------- | --------- | --------- |
+| runningEnv          | 运行环境 | _string_ | `h5` | `dd` `wx` `h5`|
+|applicationName|应用的name|_string_|`-`  |`APP_DEVICE` `APP_ANDON` `APP_EFFICIENCY` `APP_WAREHOUSE` `APP_KNOWLEDGE`|
