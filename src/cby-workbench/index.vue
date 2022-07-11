@@ -20,7 +20,7 @@
     </div>
     <div class="cby-my-agency">
       <div class="cby-agency-title">
-        <span>我的代办</span><span><van-icon name="question-o" /></span>
+        <span>我的代办</span><span><Icon name="question-o" /></span>
       </div>
       <div class="cby-agency-data">
         <div title="代办总数">

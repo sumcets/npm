@@ -2,7 +2,7 @@ import {axios} from '@bundled-es-modules/axios'
 import qs from 'qs'
 import {Toast, Dialog} from 'vant'
 
-const baseApi = 'https://api-dev.vmicloud.com/api'
+const baseApi = process.env.VUE_APP_BASE_URL
 let timeObj = null
 // create an axios instance
 const service = axios.create({
