@@ -39,9 +39,9 @@
 <script>
 import { Tab, Tabs, Search, List, Empty } from 'vant'
 import DeviceList from '../cby-device-list'
-import { deviceList } from '../../request/api/device'
-import { fixtureList } from '../../request/api/fixture'
-import { mouldList } from '../../request/api/mould'
+import { deviceList } from '../request/api/device'
+import { fixtureList } from '../request/api/fixture'
+import { mouldList } from '../request/api/mould'
 export default {
   name: "cby-dwmlist-select",
   components: {

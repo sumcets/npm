@@ -89,7 +89,7 @@
 <script>
 import { Grid, GridItem, Icon, Progress,NoticeBar,Swipe, SwipeItem, Empty, Tag, Search } from 'vant'
 import CbyUiIcon from '../cby-ui-icon'
-import { getDict } from '../../utils/ddic'
+import { getDict } from '../utils/ddic'
 export default {
   name: "cby-workbench",
   components: {

@@ -4,7 +4,7 @@
 
 <script>
 import { Icon } from 'vant'
-require('../../style/font/iconfont.css')
+require('../style/font/iconfont.css')
 export default {
   name: "cby-ui-icon",
   inheritAttrs: false,

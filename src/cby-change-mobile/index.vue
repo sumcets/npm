@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { userInfo, modifyPhoneSms, modifyPhone } from '../../request/api/user'
+import { userInfo, modifyPhoneSms, modifyPhone } from '../request/api/user'
 import { Toast, Field, Button } from 'vant'
 export default {
   name: 'cby-change-mobile',

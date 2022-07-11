@@ -19,7 +19,7 @@
 <script>
 import { Grid, GridItem, Icon } from 'vant'
 import cbyUiIcon from '../cby-ui-icon'
-import { getDict } from '../../utils/ddic'
+import { getDict } from '../utils/ddic'
 export default {
   name: "cby-function-center",
   components: {

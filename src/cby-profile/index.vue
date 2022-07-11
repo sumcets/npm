@@ -49,7 +49,7 @@
 <script>
 import { Button, Cell, Icon, Image } from 'vant'
 
-import { userInfo, getUserPhoto } from '../../request/api/user'
+import { userInfo, getUserPhoto } from '../request/api/user'
 export default {
   name: 'cby-profile',
   components: {
