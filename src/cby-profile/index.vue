@@ -61,7 +61,8 @@ export default {
   data() {
     return {
       photo: '',
-      userInfo: {}
+      userInfo: {},
+      baseApi: `${ process.env.VUE_APP_BASE_URL }/api`
     }
   },
   props: {
