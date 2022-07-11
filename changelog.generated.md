@@ -1,5 +1,5 @@
-### [v2.0.25](https://github.com/compare/v2.0.24...v2.0.25)
+### [v2.0.25-1](https://github.com/compare/v2.0.25...v2.0.25-1)
 
 `2022-07-11`
 
-- fix:添加环境 [a4be0b](https://github.com/commit/a4be0b4feb6285630e92fbd7aa3118e188a37a91)
+- fix:添加环境 [93bdc0](https://github.com/commit/93bdc047e363a31e09e94adf3fc7f4fa2dc0ab8e)
