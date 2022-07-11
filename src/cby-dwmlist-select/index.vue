@@ -79,7 +79,6 @@ export default {
     }
   },
   mounted() {
-    localStorage.setItem('token', 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbmVoZWUiLCJpYXQiOjE2NTcyNzAxNDUsImV4cCI6MTY1NzM1NjU0NSwiYXBwSWQiOiIwZGE5MzA5My1kZjAxLTRmYzgtYjNhMy1mNTIwYTEyNWYxZDUiLCJ0ZW5hbnRJZCI6ImM4ZDM1ZWUwLTgzMjItNGZiNS1iMzVhLTc3NzRiODdkN2E4NyIsInNvdXJjZSI6Img1IiwidXNlcklkIjoiYTBlZWJjOTktOWMwYi00ZWY4LWJiNmQtNmJiOWJkMzgwYTE1In0.now0fMfGgDOWV-wnta3jcvYLbK5AFAWB07WpZzLbiEk')
     this.$nextTick(() => {
       const el = this.$refs.mian
       this.rowHeight = `${ el?.offsetHeight - 44 - 70 }px`
