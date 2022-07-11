@@ -78,6 +78,7 @@ export default {
       mouldList: [], // 模具列表
     }
   },
+
   mounted() {
     this.$nextTick(() => {
       const el = this.$refs.mian
