@@ -1,5 +1,5 @@
-### [v2.0.23](https://github.com/compare/v2.0.22...v2.0.23)
+### [v2.0.24-0](https://github.com/compare/v2.0.23...v2.0.24-0)
 
-`2022-07-08`
+`2022-07-11`
 
-- feat:添加新组件 [1c72fa](https://github.com/commit/1c72fa1be4768d4a2f0ec0f5c26f40e1316ece66)
+- fix:添加环境 [e4dd68](https://github.com/commit/e4dd68485839b6c1c4d426f2b2bce72f81649867)
